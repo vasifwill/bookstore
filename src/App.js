@@ -15,7 +15,7 @@ const App = () => {
   const handleChange = (item, d) => {
     const ind = cart.indexOf(item);
     const arr = cart;
-    arr[ind].amount += d;
+    arr[ind].amount +=  d;
 
     if (arr[ind].amount === 0) arr[ind].amount = 1;
     setCart([...arr]);
